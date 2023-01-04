@@ -99,7 +99,7 @@ class BaseCmdLineTool(object):
         self.argparser.add_argument('--no-progressbar', action='store_true',
                                     default=False,
                                     help='disables progress bar')
-        self.is_stdin = True
+        self.is_stdin = False
 
     def run(self, arguments=None, get_unknowns=False):
         """
