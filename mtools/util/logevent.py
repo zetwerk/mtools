@@ -479,6 +479,10 @@ class LogEvent(object):
         return self._pattern
 
     @property
+    def actual_log_line(self):
+        return self.line_str
+
+    @property
     def sort_pattern(self):
         """Extract query pattern from operations."""
         if not self._sort_pattern:

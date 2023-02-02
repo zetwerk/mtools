@@ -89,7 +89,7 @@ class QuerySection(BaseSection):
                                    'geonear', 'find', 'aggregate']):
                 lt = LogTuple(namespace=le.namespace, operation=op_or_cmd(le),
                               pattern=le.pattern, duration=le.duration,
-                              allowDiskUse=le.allowDiskUse)
+                              allowDiskUse=le.allowDiskUse, logline=le.actual_log_line)
                 grouping.add(lt)
 
         grouping.sort_by_size()
